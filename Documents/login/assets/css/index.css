@@ -25,25 +25,29 @@ body {
   padding: 8rem 9rem 10rem 9rem;
 }
 label {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  gap: 1.3rem;
+  margin: 1rem;
 }
 .login-img,
 .login-form {
   flex: 1;
 }
-.login-imgW > img {
-  width: 100%;
-  height: 100%;
+.login-img > img {
+  /* background-image: url("../img/logo.svg"); */
+  object-fit: contain;
+  height: 55rem;
+  width: 60rem;
 }
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
-form,
-label {
+form {
   width: 100%;
   padding: 1rem;
 }
@@ -76,11 +80,13 @@ a {
 button {
   background-color: var(--secondary-color);
   width: 50%;
-  height: 7rem;
+  height: 5.5rem;
   border-radius: 2rem;
   color: white;
+  margin: 3rem 0;
 }
 .dividers {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -109,4 +115,49 @@ hr {
 .secial-media-div > img {
   height: 3rem;
   width: 3rem;
+}
+.mobile-header {
+  display: none;
+}
+
+@media screen and (width<=600px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .bck {
+    display: none;
+  }
+
+  .login-img {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--primary-clor);
+  }
+  .login-form {
+    margin-top: 10rem;
+  }
+  .title {
+    width: 90%;
+    font-size: 4rem;
+    margin: 5rem 0;
+  }
+  .dividers {
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .dividers {
+    gap: 3rem;
+  }
+  hr {
+    height: 0.2rem;
+    width: 11.5rem;
+  }
+  .social-media-login {
+    margin: 2rem;
+  }
 }
