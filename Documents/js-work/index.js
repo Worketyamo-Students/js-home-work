@@ -178,6 +178,6 @@ function factorial(fac) {
   return fac * factorial(fac - 1);
 }
 
-let fac = 5;
+let fac = 10;
 
 console.log(factorial(fac));
