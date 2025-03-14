@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setane Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-pinky: #ffc9f0;
+      }
+    </style>
+  </head>
+  <body class="px-[20px] font-['Inter'] font-[10px]">
+    <div
+      class="border-l-1 h-full px-[10px] pt-[47px] bg-[radial-gradient(circle,_#b3b3b3_1px,_transparent_1px)] bg-[size:10px_10px]"
+    >
+      <!-- header -->
+      <section class="flex justify-between px-2">
+        <div class="flex gap-2 items-center">
+          <img src="./assets/img/logo.svg" alt="" />
+          <h1 class="font-['Handlee'] font-bold">Setane</h1>
+        </div>
+        <div class="flex gap-5 font-normal">
+          <h1>Portfolio</h1>
+          <div>
+            <a
+              href=""
+              class="bg-linear-to-b from-red-white from-50% to-pinky text-clip"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="pt-[3rem] flex items-center">
+        <div>
+          <img
+            src="./assets/img/me.png"
+            alt=""
+            class="size-[4.5rem] -rotate-5"
+          />
+        </div>
+        <div>
+          <img src="./assets/img/arrow.svg" alt="" class="size-[2.5rem]" />
+        </div>
+        <h1
+          class="bg-linear-to-b bg-pinky text-clip rotate-x-15 -rotate-y-30 text-nowrap text-[0.8rem] mb-4"
+        >
+          Setane Essame
+        </h1>
+      </section>
+    </div>
+  </body>
+</html>
