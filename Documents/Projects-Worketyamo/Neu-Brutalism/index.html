@@ -23,17 +23,21 @@
       }
     </style>
   </head>
-  <body class="px-[20px] font-['Inter'] font-[10px]">
+  <body
+    class="px-[20px] font-['Inter'] font-[10px] lg:px-[90px] overflow-x-hidden"
+  >
     <div
-      class="border-l-1 h-full pt-[47px] bg-[radial-gradient(circle,_#b3b3b3_1px,_transparent_1px)] bg-[size:10px_10px]"
+      class="border-l-2 h-full pt-[47px] bg-[radial-gradient(circle,_#b3b3b3_1px,_transparent_1px)] bg-[size:10px_10px]"
     >
       <!-- header -->
-      <section class="flex justify-between px-2 px-[10px]">
+      <section
+        class="flex justify-between px-2 px-[10px] lg:justify-end lg:gap-15"
+      >
         <div class="flex gap-2 items-center">
-          <img src="./assets/img/logo.svg" alt="" />
-          <h1 class="font-['Handlee'] font-bold">Setane</h1>
+          <img src="./assets/img/logo.svg" alt="" class="lg:size-8" />
+          <h1 class="font-['Handlee'] font-bold lg:text-2xl">Setane</h1>
         </div>
-        <div class="flex gap-5 font-normal">
+        <div class="flex gap-5 font-normal lg:text-xl">
           <h1>Portfolio</h1>
           <div>
             <a
@@ -45,26 +49,32 @@
         </div>
       </section>
       <!-- hero section  -->
-      <section class="pt-[3rem] px-[10px]">
+      <section class="pt-[3rem] px-[10px] lg:pt-[5rem] lg:px-[15px]">
         <div class="flex items-center">
           <div>
             <img
               src="./assets/img/me.png"
               alt=""
-              class="size-[4.5rem] -rotate-5"
+              class="size-[4.5rem] -rotate-5 lg:size-[10.5rem]"
             />
           </div>
           <div>
-            <img src="./assets/img/arrow.svg" alt="" class="size-[2.5rem]" />
+            <img
+              src="./assets/img/arrow.svg"
+              alt=""
+              class="size-[2.5rem] lg:size-[5.5rem]"
+            />
           </div>
           <h1
-            class="bg-linear-to-b bg-pinky text-clip rotate-x-15 -rotate-y-30 text-nowrap text-[0.8rem] mb-4"
+            class="bg-linear-to-b bg-pinky text-clip rotate-x-15 -rotate-y-30 text-nowrap text-[0.8rem] mb-4 lg:text-[1.2rem]"
           >
             Setane Essame
           </h1>
         </div>
-        <div class="pt-6 flex flex-col gap-5">
-          <h1 class="font-bold text-3xl text-wrap w-70/100">
+        <div class="pt-6 flex flex-col gap-5 lg:flex-row lg:pt-15">
+          <h1
+            class="font-bold text-3xl text-wrap w-70/100 lg:flex-1 lg:text-6xl"
+          >
             I
             <section
               class="inline bg-linear-to-b from-red-white from-50% to-pinky text-clip"
@@ -73,29 +83,41 @@
             </section>
             top notch websites
           </h1>
-          <p>
-            I’ll design your website and will develop to land it on internet
-            using html,tailwindcss
-          </p>
-          <button class="w-30/100 text-white bg-black font-medium mt-3">
-            Hire Me
-          </button>
+          <div class="flex-1">
+            <p class="lg:text-2xl">
+              I’ll design your website and will develop to land it on internet
+              using html,tailwindcss
+            </p>
+            <button
+              class="w-30/100 text-white bg-black font-medium mt-3 lg:h-15"
+            >
+              Hire Me
+            </button>
+          </div>
         </div>
-        <div class="pt-10">
-          <h1 class="bg-linear-to-b bg-pinky text-clip w-38/100 text-nowrap">
+        <div class="pt-10 lg:pt-22">
+          <h1
+            class="bg-linear-to-b bg-pinky text-[.9rem] text-clip w-39/100 text-wrap lg:text-xl lg:w-15/100 lg:mx-5"
+          >
             Humm what i do ?
           </h1>
-          <img src="./assets/img/arrow.svg" alt="" class="rotate-280 mt-5" />
-          <div class="grid grid-cols-1 grid-row-3 gap-8 pt-10 px-8">
+          <img
+            src="./assets/img/arrow.svg"
+            alt=""
+            class="rotate-280 mt-5 lg:size-15"
+          />
+          <div
+            class="grid grid-cols-1 gap-8 pt-10 px-8 lg:grid-cols-3 lg:gap-15"
+          >
             <div
-              class="text-center pt-10 border-4 border-solid border-byelllow h-[22rem] bg-pirmary-yelllow rounded-xl -rotate-5"
+              class="text-center pt-10 border-4 border-solid border-byelllow h-[22rem] lg:h-[25rem] bg-pirmary-yelllow rounded-xl -rotate-5"
             >
               <h1
-                class="text-clip bg-pirmary-blue inline text-2xl absolute translate-x-15 rotate-5"
+                class="text-clip bg-pirmary-blue inline text-xl lg:text-2xl absolute translate-x-15 rotate-5"
               >
                 Pen /Paper
               </h1>
-              <div class="pt-20 px-8 flex flex-col gap-5">
+              <div class="pt-20 lg:pt-30 px-8 flex flex-col gap-5">
                 <img src="./assets/img/pen.svg" alt="" class="size-12" />
                 <h1 class="text-2xl font-semibold w-45 text-start">
                   User Resarch Design
@@ -103,7 +125,7 @@
               </div>
             </div>
             <div
-              class="border-4 border-solid border-bblue h-[22rem] bg-pirmary-blue rounded-xl rotate-10"
+              class="border-4 border-solid border-bblue lg:h-[25rem] h-[22rem] bg-pirmary-blue rounded-xl rotate-10"
             >
               <div class="px-10">
                 <h1
@@ -111,7 +133,7 @@
                 >
                   Figma
                 </h1>
-                <div class="pt-30 flex flex-col gap-5">
+                <div class="pt-30 flex flex-col gap-5 lg:pt-40">
                   <img src="./assets/img/eye.svg" alt="" class="size-12" />
                   <h1 class="text-2xl font-semibold w-45 text-start">
                     UI & Product Design
@@ -120,7 +142,7 @@
               </div>
             </div>
             <div
-              class="border-4 border-solid border-bpink bg-pirmary-pink h-[22rem] -rotate-5 rounded-xl mt-5"
+              class="lg:h-[25rem] border-4 border-solid border-bpink bg-pirmary-pink h-[22rem] -rotate-5 rounded-xl mt-5"
             >
               <div class="px-10">
                 <h1
@@ -128,7 +150,7 @@
                 >
                   Webflow
                 </h1>
-                <div class="pt-30 flex flex-col gap-5">
+                <div class="pt-30 flex flex-col gap-5 lg:pt-35">
                   <img src="./assets/img/star.svg" alt="" class="size-12" />
                   <h1 class="text-2xl font-semibold w-45 text-start">
                     Coding Using Morden Technologies
@@ -287,15 +309,17 @@
           </p>
           <div class="flex flex-col gap-5 pt-5">
             <div class="flex w-full">
-              <div class="border-l-1 bg-pirmary-pink text-sm">Name</div>
+              <div class="border-l-1 bg-pirmary-pink text-sm pl-3">Name</div>
               <div class="w-full border-b-1">Setane Essame</div>
             </div>
             <div class="flex w-full">
-              <div class="border-l-1 bg-pirmary-yelllow text-sm">Email</div>
+              <div class="border-l-1 bg-pirmary-yelllow text-sm pl-3">
+                Email
+              </div>
               <div class="w-full border-b-1">setane1122@gmail.com</div>
             </div>
             <div class="flex w-full">
-              <div class="border-l-1 bg-pirmary-blue text-sm">
+              <div class="border-l-1 bg-pirmary-blue text-sm pl-3">
                 About Your Project
               </div>
               <div class="border-b-1">I want to discuss you about ...</div>
